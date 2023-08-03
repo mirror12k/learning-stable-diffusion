@@ -14,3 +14,10 @@ env PYTORCH_CUDA_ALLOC_CONF=garbage_collection_threshold:0.6,max_split_size_mb:1
 
 python3 optimizedSD/optimized_txt2img.py --prompt "Realistic painting of Hitler riding a tricycle" --H 512 --W 512 --seed 821 --n_iter 5 --n_samples 1 --ddim_steps 50 --ckpt /app/data/sd-v1-4-full-ema.ckpt
 ```
+
+
+# Launching WebUI:
+```sh
+python3 launch.py --listen --medvram --xformers
+```
+
